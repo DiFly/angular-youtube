@@ -1,0 +1,9 @@
+{
+  "workbench.preferredHighContrastColorTheme": "Visual Studio Dark",
+  "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+  "workbench.preferredLightColorTheme": "One Dark Pro",
+  "oneDarkPro.editorTheme": "ayu",
+  "workbench.colorTheme": "One Dark Pro",
+  "telemetry.enableTelemetry": false,
+  "javascript.implicitProjectConfig.checkJs": true
+}

@@ -1,0 +1,23 @@
+
+<div class="">
+  <div class="navbar navbar-light bg-light">
+    <div class="navbar-brand">
+      <h1>YouTube Search</h1>
+    </div>
+    <div class="form-inline">
+      <app-search-box (loading)="loading = $event" (results)="updateResult($event)" class="my-2 my-sm-0"></app-search-box>
+    </div>
+  </div>
+
+  <div>
+    <p *ngIf="loading" class="alert alert-info">Loading</p>
+  </div>
+
+
+  <div class="card-columns row row-cols-1" style="display: inline-block; break-inside: avoid;">
+    <div class="col mb-4" *ngFor="let result of results">
+      <app-search-result [result]="result" class="card"></app-search-result>
+    </div>
+  </div>
+</div>
+
